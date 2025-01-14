@@ -45,36 +45,3 @@ class Normal:
 
                 if not self.same_sign(scalar1, scalar2):
                     point.mesh = 0
-
-
-    # def process(self, points: List[Point3D], light: Point3D):
-    #     for point in points:
-    #         if point.mesh == 0 or point == self.first or point == self.second or point == self.third:
-    #             continue
-
-    #         # Create vectors from the light point to the face vertices
-    #         V = [self.vector(self.first, light), self.vector(self.second, light), self.vector(self.third, light)]
-
-    #         # Calculate normals for each side of the triangle
-    #         normal = [V[0].cross_product(V[1]), V[0].cross_product(V[2]), V[1].cross_product(V[2])]
-
-    #         scalar = [normal[0].scalar_product(V[2]), normal[1].scalar_product(V[1]), normal[2].scalar_product(V[0])]
-    #         cmp_scalar = [
-    #             normal[0].scalar_product(self.vector(point, light)),
-    #             normal[1].scalar_product(self.vector(point, light)),
-    #             normal[2].scalar_product(self.vector(point, light))
-    #         ]
-
-    #         # Check if the point is inside the triangle
-    #         if all(self.same_sign(s, c) for s, c in zip(scalar, cmp_scalar)):
-    #             side_vector1 = self.vector(self.second, self.first)
-    #             side_vector2 = self.vector(self.third, self.first)
-    #             side_normal = side_vector1.cross_product(side_vector2)
-
-    #             scalar1 = side_normal.scalar_product(self.vector(light, self.first))
-    #             scalar2 = side_normal.scalar_product(self.vector(point, self.first))
-
-    #             if not self.same_sign(scalar1, scalar2):
-    #                 point.mesh = 0
-
-    #     return points
