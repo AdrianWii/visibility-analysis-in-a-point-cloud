@@ -1,5 +1,10 @@
 # Bound Block Elimination Algorithm for Point Cloud Analysis
 
+<p align="center">
+  <img src="/images/input.png" alt="Input" width="300">
+  <img src="/images/visible_area.png" alt="Visible Area" width="300">
+</p>
+
 ## Project Description
 This repository contains the source code implementation of the Bound Block Elimination Algorithm, developed for accurate visibility computation in point cloud analysis. The algorithm is based on research findings presented in the following scientific paper:
 
